@@ -53,7 +53,7 @@ public class Aula7AC2 {
             System.out.println(" Resultado inválido");
         }
             
-        // Fecha o scanner para evitar vazamento de recursos
+        // Fecha o scanner 
         scanner.close();
     }
 }
