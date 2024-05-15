@@ -16,18 +16,18 @@ public class Aula9AC2 {
         System.out.print("Digite a quantidade de alunos: ");
         alunos = scn.nextInt();
 
-        for(int i = 1; i <= alunos; i++ ){  
+        for(int m = 1; m <= alunos; m++ ){  
             System.out.print("Digite o nome do aluno: ");
             nome = scn.next();
             System.out.print("Digite a quantidade de notas: ");
             notas = scn.nextInt();
 
-            for(int h = 1; h <= notas; h++ ){
+            for(int a = 1; a <= notas; a++ ){
                 do {
-                    System.out.print("Digite a nota " + h + ": ");
+                    System.out.print("Digite a nota " + a + ": ");
                     notafinal = scn.nextDouble();
                 } while (notafinal < 0.0 || notafinal > 10.0);
-                System.out.print("Digite o peso (em porcentagem) da nota " + h + ": ");
+                System.out.print("Digite o peso (em porcentagem) da nota " + a + ": ");
                 peso = scn.nextDouble();
                 media += notafinal * (peso/100);
             }
@@ -40,10 +40,10 @@ public class Aula9AC2 {
                 condicao = "Aprovado";
             }
 
-            DecimalFormat md = new DecimalFormat("#.#");
+            DecimalFormat ma = new DecimalFormat("#.#");
 
             System.out.println("\nNome do Aluno: " + nome);
-            System.out.println("Media Final: " + md.format(media));
+            System.out.println("Media Final: " + ma.format(media));
             System.out.println("Condicao: " + condicao);
         }
 
