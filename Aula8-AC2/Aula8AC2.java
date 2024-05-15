@@ -17,7 +17,7 @@ public class Aula8AC2 {
        alunos = scn.nextInt();
 
 
-       for(int i = 1; i <= alunos; i++ ){  // Inicia a repetição dos códigos abaixo
+       for(int m = 1; m <= alunos; m++ ){  // Inicia a repetição dos códigos abaixo
            System.out.print("Digite o nome do aluno: "); // Insere o nome do aluno
            nome = scn.next();
            System.out.print("Digite a quantidade de notas: "); // Insere quantas notas você deseja 
@@ -25,10 +25,10 @@ public class Aula8AC2 {
 
       
 	
-           for(int h = 1; h <= notas; h++ ){
-                    System.out.print("Digite a nota " + h + ": "); // Insere a nota que obteve
+           for(int a = 1; a <= notas; a++ ){
+                    System.out.print("Digite a nota " + a + ": "); // Insere a nota que obteve
                     notafinal = scn.nextDouble();
-               System.out.print("Digite o peso (em porcentagem) da nota " + h + ": "); // Insere o peso da nota
+               System.out.print("Digite o peso (em porcentagem) da nota " + a + ": "); // Insere o peso da nota
                peso = scn.nextDouble();
                media += notafinal * (peso/100); // Calcula a média 
              }
@@ -42,10 +42,10 @@ public class Aula8AC2 {
         condicao = "Aprovado"; // Se sua média for até acima de 4,9 aparece que você foi aprovado
     }
 
-          DecimalFormat md = new DecimalFormat("#.#");
+          DecimalFormat ma = new DecimalFormat("#.#");
 
           System.out.println("\nNome do Aluno: " + nome); // Aparece o nome do aluno
-          System.out.println("Media Final: " + md.format(media)); // Aparece a média final
+          System.out.println("Media Final: " + ma.format(media)); // Aparece a média final
           System.out.println("Condicao: " + condicao); // Aparece se foi aprovado, substitutiva ou reprovado
         }
 
