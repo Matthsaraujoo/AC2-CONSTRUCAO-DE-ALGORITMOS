@@ -34,9 +34,9 @@ public class Aula10AC2 {
                peso = scn.nextDouble();
                media += notafinal * (peso/100); // Calcula a média 
              }
-             System.out.print("Deseja reinserir as notas (S = sim, N = nao)"); 
+             System.out.print("Deseja reinserir as notas ? (S = 0, N = 1)"); 
              reinserir = scn.nextInt();
-	} while (reinserir == 1);
+	} while (reinserir == 0);
        
        
     if (media >= 0 && media <= 2) {
@@ -47,7 +47,7 @@ public class Aula10AC2 {
         condicao = "Aprovado"; // Se sua média for até acima de 4,9 aparece que você foi aprovado
     }
 
-          DecimalFormat ma= new DecimalFormat("#.#");
+          DecimalFormat ma = new DecimalFormat("#.#");
 
           System.out.println("\nNome do Aluno: " + nome); // Aparece o nome do aluno
           System.out.println("Media Final: " + ma.format(media)); // Aparece a média final
