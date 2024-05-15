@@ -15,12 +15,12 @@ public class Aula10AC2 {
        int notas = 0;
        String nome = null, condicao;
 
-       System.out.print("Digite a quantidade de alunos: "); // Insere quantos alunos você deseja calcular
+       System.out.print("Digite a quantidade de alunos: "); // Coloca quantos alunos você deseja calcular
        alunos = scn.nextInt();
 
 
        for(int i = 1; i <= alunos; i++ ){  // Inicia a repetição dos códigos abaixo
-           System.out.print("Digite o nome do aluno: "); // Insere o nome do aluno
+           System.out.print("Digite o nome do aluno: "); // Coloca o nome do aluno
            nome = scn.next();
            System.out.print("Digite a quantidade de notas: "); // Insere quantas notas você deseja 
            notas = scn.nextInt();
